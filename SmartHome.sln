@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.Backend", "SmartHome.Backend\SmartHome.Backend.csproj", "{D27C11DE-8AAB-4FEC-A76F-32B395008D8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libraries", "Libraries\Libraries.csproj", "{86896BA8-61F7-4F9D-95F8-7567CCD49757}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,5 +42,9 @@ Global
 		{D27C11DE-8AAB-4FEC-A76F-32B395008D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D27C11DE-8AAB-4FEC-A76F-32B395008D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D27C11DE-8AAB-4FEC-A76F-32B395008D8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86896BA8-61F7-4F9D-95F8-7567CCD49757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86896BA8-61F7-4F9D-95F8-7567CCD49757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86896BA8-61F7-4F9D-95F8-7567CCD49757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86896BA8-61F7-4F9D-95F8-7567CCD49757}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
