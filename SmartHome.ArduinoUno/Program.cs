@@ -1,5 +1,6 @@
 ﻿using SmartHome.ArduinoUno.Enums;
 using Libraries;
+using SmartHome.ArduinoUno;
 
 #region States
 
@@ -7,6 +8,8 @@ State state = State.Calm;
 byte peopleCount = 0;
 byte interationsNotCalm = 0;
 Uart uart = new Uart();
+DistanceSensor firstSensor = new DistanceSensor(6,7);
+DistanceSensor secondSensor = new DistanceSensor(4,5);
 
 #endregion
 
@@ -15,9 +18,9 @@ const int rangeToDetect = 61;
 while (true)
 {
     Console.Write("Данные первого датчика:");
-    int firstRange = int.Parse(Console.ReadLine()!);
+    int firstRange = firstSensor.GetDistance();
     Console.Write("Данные второго датчика:");
-    int secondRange = int.Parse(Console.ReadLine()!);
+    int secondRange = secondSensor.GetDistance();
     
     if (interationsNotCalm == 3)
     {
