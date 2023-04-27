@@ -1,7 +1,11 @@
 ﻿using Libraries;
 using SmartHome.ArduinoNano;
 
-Lighting[] lighting = {new() {Name = "Большой свет"}, new() {Name = "Малый свет"}};
+Lighting[] lighting = 
+    {
+        new(1,2,3) {Name = "Большой свет"},
+        new(4,5,6) {Name = "Малый свет"}
+    };
 Uart uart = new Uart();
 
 while (true)
@@ -23,9 +27,6 @@ while (true)
             light.Off();
         }
     }
-}
-
-int GetSwitchStatus(int relayPin)
-{
-    return 1;
+    
+    uart.Write(115);
 }
